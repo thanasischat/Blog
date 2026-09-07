@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <Style>
+        .nav-container {  
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F8F7F4;
+            padding: 40px;
+            border-bottom: 1px solid #E5E3DE;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .navbtn {
+            cursor: pointer;
+        }
+        .logo h1 { 
+            margin: 0;
+            font-size: 24px; 
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #F8F7F4;
+            margin-top: 20px;
+            padding: 50px;
+            border-bottom: 1px solid #E5E3DE;
+        }
+        .search-box {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .inputstyle {
+            padding: 12px;
+            width: 350px;
+        }
+        .inputbtn {
+            padding: 12px 20px;
+            background-color: #2F5D50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .categories {
+            text-align: center;
+            padding: 20px 50px;
+            background-color: white;
+        }
+        .category-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .catbuttons {
+            background-color: #F8F7F4;
+            border: 1px solid #E5E3DE;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .active{
+            background-color: #2F5D50;
+            color: white;
+        }
+        .featured {
+            padding: 60px 50px;
+            background-color: #F8F7F4;
+            text-align: center;
+        }
+        .featured article {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .featured article img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .article-content {
+             padding: 30px;
+        }
+        .latest article img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .latest article {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+        }
+       .article-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    </Style>
+</head>
+<body>
+    <header>
+     <nav class="nav-container">
+
+        <div class="logo">
+         <h1>Sakis Blog</h1>
+        </div>
+
+        <div class="nav-links">
+            <div class="navbtn">Home</div>
+            <div class="navbtn">Explore</div>
+            <div class="navbtn">Categories</div>
+            <div class="navbtn">About</div>
+            <div class="navbtn">Login</div>
+        </div>
+     </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h2>Discover stories worth sharing</h2>
+                <p>Experiences, places, ideas and knowledge from our community</p>
+                <div class="search-box">
+                <input class="inputstyle" type="text" placeholder="Search articles">
+                <button class="inputbtn">Search</button>
+                <p class="no-results"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+    <h2>Explore Categories</h2>
+            <div class="category-buttons">
+                <button class="catbuttons active">All</button>
+                <button class="catbuttons">Travel</button>
+                <button class="catbuttons">Food</button>
+                <button class="catbuttons">Technology</button>
+                <button class="catbuttons">Lifestyle</button>
+                <button class="catbuttons">Places</button>
+                <button class="catbuttons">Experiences</button>
+           </div>
+        </section>
+        <section class="featured">
+            <h2>Featured Article</h2>
+            <article>
+            <img  src="neoiporoi.jpg" alt="neoiporoi">
+            <div class="article-content">
+            <p>TRAVEL</p>
+            <h3>What to Expect When Visiting Neoi Poroi Beach </h3>
+
+            <p>
+                A practical guide explaining what you should know
+                before visiting this popular seaside destination.
+            </p>
+
+            <p>John Smith · Aug 20, 2026 · 6 min read</p>
+            </div>
+            </article>
+        </section>
+        <section class="latest">
+            <h2>Latest Articles</h2>
+            <div class="article-grid">
+                <article class="latest-article">
+                    <img class="img-latest" src="Thessaly.jpg" alt="thessaly">
+                    <h2>TRAVEL</h2>
+                    <p>A Weekend in Thessaly</p>
+                    <p>John 5 min</p>
+                </article>
+
+                <article class="latest-article">
+                    <img class="img-latest" src="greekfood.jpg" alt="greekfood">
+                    <h2>FOOD</h2>
+                    <p>Greek Food You Should Try</p>
+                    <p>Maria 4 min</p>
+                </article>
+
+                <article class="latest-article">
+                    <img class="img-latest" src="usefullapp.jpg" alt="usefullapp">
+                    <h2>TECHNOLOGY</h2>
+                    <p>Useful Apps for Travels</p>
+                    <p>Alex 6 min</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
