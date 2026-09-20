@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <Style>
+        * {
+            box-sizing: border-box;
+        }
+      
+        
         .nav-container {  
             display: flex;
             justify-content: space-between;
@@ -12,6 +17,10 @@
             background-color: #F8F7F4;
             padding: 40px;
             border-bottom: 1px solid #E5E3DE;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            
         }
         .nav-links {
             display: flex;
@@ -31,7 +40,7 @@
             align-items: center;
             text-align: center;
             background: #F8F7F4;
-            margin-top: 20px;
+            margin-top: 120px;
             padding: 50px;
             border-bottom: 1px solid #E5E3DE;
         }
@@ -52,6 +61,7 @@
             cursor: pointer;
         }
         .categories {
+            scroll-margin-top: 120px;
             text-align: center;
             padding: 20px 50px;
             background-color: white;
@@ -121,10 +131,10 @@
         </div>
 
         <div class="nav-links">
-            <div class="navbtn">Home</div>
-            <div class="navbtn">Explore</div>
-            <div class="navbtn">Categories</div>
-            <div class="navbtn">About</div>
+            <div class="navbtn home">Home</div>
+            <div class="navbtn Explore">Explore</div>
+            <div class="navbtn Categories">Categories</div>
+            <div class="navbtn About">About</div>
             <div class="navbtn">Login</div>
         </div>
      </nav>
@@ -146,12 +156,12 @@
     <h2>Explore Categories</h2>
             <div class="category-buttons">
                 <button class="catbuttons active">All</button>
-                <button class="catbuttons">Travel</button>
-                <button class="catbuttons">Food</button>
-                <button class="catbuttons">Technology</button>
-                <button class="catbuttons">Lifestyle</button>
-                <button class="catbuttons">Places</button>
-                <button class="catbuttons">Experiences</button>
+                <button class="catbuttons">Beaches</button>
+                <button class="catbuttons">Mountains</button>
+                <button class="catbuttons">Cities</button>
+                <button class="catbuttons">Villages</button>
+                <button class="catbuttons">Nature</button>
+                <button class="catbuttons">Historical</button>
            </div>
         </section>
         <section class="featured">
@@ -174,24 +184,24 @@
         <section class="latest">
             <h2>Latest Articles</h2>
             <div class="article-grid">
-                <article class="latest-article">
+                <article class="latest-article" data-id="1">
                     <img class="img-latest" src="Thessaly.jpg" alt="thessaly">
-                    <h2>TRAVEL</h2>
+                    <h2>Nature</h2>
                     <p>A Weekend in Thessaly</p>
                     <p>John 5 min</p>
                 </article>
 
-                <article class="latest-article">
-                    <img class="img-latest" src="greekfood.jpg" alt="greekfood">
-                    <h2>FOOD</h2>
-                    <p>Greek Food You Should Try</p>
+                <article class="latest-article" data-id="2" onclick="window.location.href='article.html'">
+                    <img class="img-latest" src="neoi poroi.jpg" alt="Neoi Poroi">
+                    <h2>Beaches</h2>
+                    <p>What to Expect When Visiting Neoi Poroi Beach</p>
                     <p>Maria 4 min</p>
                 </article>
 
-                <article class="latest-article">
-                    <img class="img-latest" src="usefullapp.jpg" alt="usefullapp">
-                    <h2>TECHNOLOGY</h2>
-                    <p>Useful Apps for Travels</p>
+                <article class="latest-article" data-id="3">
+                    <img class="img-latest" src="olympos.jpg" alt="Olympos">
+                    <h2>Mountains</h2>
+                    <p>Exploring Mount Olympos</p>
                     <p>Alex 6 min</p>
                 </article>
 
