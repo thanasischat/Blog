@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+     <nav class="nav-container">
+
+        <div class="logo">
+         <h1>Sakis Blog</h1>
+        </div>
+
+        <div class="nav-links">
+            <div class="navbtn home">Home</div>
+            <div class="navbtn Explore">Explore</div>
+            <div class="navbtn Categories">Categories</div>
+            <div class="navbtn About">About</div>
+            <div class="navbtn">Login</div>
+        </div>
+     </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h2>Discover stories worth sharing</h2>
+                <p>Experiences, places, ideas and knowledge from our community</p>
+                <div class="search-box">
+                <input class="inputstyle" type="text" placeholder="Search articles">
+                <button class="inputbtn">Search</button>
+                <p class="no-results"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+    <h2>Explore Categories</h2>
+            <div class="category-buttons">
+                <button class="catbuttons active">All</button>
+                <button class="catbuttons">Beaches</button>
+                <button class="catbuttons">Mountains</button>
+                <button class="catbuttons">Cities</button>
+                <button class="catbuttons">Villages</button>
+                <button class="catbuttons">Nature</button>
+                <button class="catbuttons">Historical</button>
+           </div>
+        </section>
+        <section class="featured">
+            <h2>Featured Article</h2>
+            <article>
+            <img  src="neoiporoi.jpg" alt="neoiporoi">
+            <div class="article-content">
+            <p>TRAVEL</p>
+            <h3>What to Expect When Visiting Neoi Poroi Beach </h3>
+
+            <p>
+                A practical guide explaining what you should know
+                before visiting this popular seaside destination.
+            </p>
+
+            <p>John Smith · Aug 20, 2026 · 6 min read</p>
+            </div>
+            </article>
+        </section>
+        <section class="latest">
+            <h2>Latest Articles</h2>
+            <div class="article-grid">
+                <article class="latest-article" data-id="1">
+                    <img class="img-latest" src="Thessaly.jpg" alt="thessaly">
+                    <h2>Nature</h2>
+                    <p>A Weekend in Thessaly</p>
+                    <p>John 5 min</p>
+                </article>
+
+                <article class="latest-article" data-id="2" onclick="window.location.href='article.html'">
+                    <img class="img-latest" src="neoi poroi.jpg" alt="Neoi Poroi">
+                    <h2>Beaches</h2>
+                    <p>What to Expect When Visiting Neoi Poroi Beach</p>
+                    <p>Maria 4 min</p>
+                </article>
+
+                <article class="latest-article" data-id="3">
+                    <img class="img-latest" src="olympos.jpg" alt="Olympos">
+                    <h2>Mountains</h2>
+                    <p>Exploring Mount Olympos</p>
+                    <p>Alex 6 min</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
